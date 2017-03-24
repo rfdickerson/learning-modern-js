@@ -1,0 +1,41 @@
+// customize your style here
+$primary: #466BB0;
+
+.square {
+    padding: 20px 20px 20px 20px;
+}
+
+/* shorthand */
+#foo {
+  animation: bobble 2s ease-in infinite;
+}
+ 
+@keyframes bobble {
+  0% {
+    transform: translate3d(50px, 40px, 0px);
+    animation-timing-function: ease-in;
+  }
+  50% {
+    transform: translate3d(50px, 50px, 0px);
+    animation-timing-function: ease-out;
+  }
+  100% {
+    transform: translate3d(50px, 40px, 0px);
+  }
+}
+
+.collapsed {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height .15s ease-out;
+}
+
+.opened {
+    max-height: 500px;
+    background-color: #eeeeee;
+    transition: background-color .2s ease-out;
+    transition: max-height .25s ease-in;
+}
+
+// use the Bulma stylesheet framework
+@import "node_modules/bulma/bulma";
