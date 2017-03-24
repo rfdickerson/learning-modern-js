@@ -1,11 +1,14 @@
-import React from 'react';
+// @flow
 
+import React from 'react';
 
 export default class AddMessageBox extends React.Component {
 
-    changeName(e) {
-        const newName = e.target.value;
-        this.props.changeName(newName);
+    changeName(e : Event) {
+        const target = e.target
+        if (target instanceof HTMLInputElement) {
+            this.props.changeName(target.value);
+        } 
     }
 
     render() {
