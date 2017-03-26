@@ -12,8 +12,11 @@ export default class Layout extends React.Component {
   
     constructor() {
         super()
-        this.state = {name: "Robert F. Dickerson"}
-        this.state = {twitterHandle: "@rfdickerson"}
+        this.state = {
+            name: "Robert F. Dickerson",
+            twitterHandle: "@rfdickerson"
+        }
+        // this.state = {twitterHandle: "@rfdickerson"}
     }
 
     changeName(name) {
@@ -25,9 +28,7 @@ export default class Layout extends React.Component {
     }
 
     render() {
-        const name = "Robert F. Dickerson"
-        const twitterHandle = "@rfdickerson"
-
+        
         return (
             <section className="section">
                 <div class="container">

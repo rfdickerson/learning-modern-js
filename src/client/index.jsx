@@ -5,7 +5,7 @@ import { APP_CONTAINER_SELECTOR }from '../shared/config'
 import React from 'react';
 import {render} from 'react-dom';
 
-import Layout from './app/layout';
+import Layout from './app/Layout.jsx';
 
 // load stylesheet
 require("./sass/default.scss");
