@@ -11,9 +11,19 @@ export default class AddMessageBox extends React.Component {
         } 
     }
 
+    changeTwitter(e: Event) {
+        const target = e.target 
+        if (target instanceof HTMLInputElement) {
+            this.props.changeTwitter(target.value);
+        }
+    }
+
     render() {
         return (
-            <input onChange={this.changeName.bind(this)} />
+            <div>
+                <input onChange={this.changeName.bind(this)} />
+                <input onChange={this.changeTwitter.bind(this)} />
+            </div>
         )
     }
 
