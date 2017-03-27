@@ -1,6 +1,6 @@
 // @flow
 
-import React from 'react';
+import React, { PropTypes } from 'react';
 
 export default class MessageBox extends React.Component {
 
@@ -41,6 +41,6 @@ export default class MessageBox extends React.Component {
                     )
 
     }
-    
+
 
 }
